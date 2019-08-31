@@ -11,6 +11,8 @@
 		B54C19BE231A3F88007DAB33 /* StoriesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54C19BC231A3F88007DAB33 /* StoriesTableCell.xib */; };
 		B54C19C1231A4A91007DAB33 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C19BF231A4A91007DAB33 /* StoryCollectionViewCell.swift */; };
 		B54C19C2231A4A91007DAB33 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54C19C0231A4A91007DAB33 /* StoryCollectionViewCell.xib */; };
+		B54C19C5231A6196007DAB33 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C19C3231A6196007DAB33 /* FeedTableViewCell.swift */; };
+		B54C19C6231A6196007DAB33 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54C19C4231A6196007DAB33 /* FeedTableViewCell.xib */; };
 		B56B43DB23073A95009681AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B43DA23073A95009681AF /* AppDelegate.swift */; };
 		B56B43DD23073A95009681AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B43DC23073A95009681AF /* SceneDelegate.swift */; };
 		B56B43E423073A98009681AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56B43E323073A98009681AF /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		B54C19BC231A3F88007DAB33 /* StoriesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesTableCell.xib; sourceTree = "<group>"; };
 		B54C19BF231A4A91007DAB33 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		B54C19C0231A4A91007DAB33 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		B54C19C3231A6196007DAB33 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		B54C19C4231A6196007DAB33 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		B56B43D723073A95009681AF /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56B43DA23073A95009681AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B56B43DC23073A95009681AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				B54C19BC231A3F88007DAB33 /* StoriesTableCell.xib */,
 				B54C19BF231A4A91007DAB33 /* StoryCollectionViewCell.swift */,
 				B54C19C0231A4A91007DAB33 /* StoryCollectionViewCell.xib */,
+				B54C19C3231A6196007DAB33 /* FeedTableViewCell.swift */,
+				B54C19C4231A6196007DAB33 /* FeedTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56B43F723073B1D009681AF /* Profile.storyboard in Resources */,
+				B54C19C6231A6196007DAB33 /* FeedTableViewCell.xib in Resources */,
 				B56B43F523073B10009681AF /* NewPost.storyboard in Resources */,
 				B56B43F123073AEF009681AF /* Home.storyboard in Resources */,
 				B56B43E723073A98009681AF /* LaunchScreen.storyboard in Resources */,
@@ -234,6 +241,7 @@
 				B56B43DB23073A95009681AF /* AppDelegate.swift in Sources */,
 				B56B43DD23073A95009681AF /* SceneDelegate.swift in Sources */,
 				B54C19C1231A4A91007DAB33 /* StoryCollectionViewCell.swift in Sources */,
+				B54C19C5231A6196007DAB33 /* FeedTableViewCell.swift in Sources */,
 				B56B43FD23073B5B009681AF /* SearchViewController.swift in Sources */,
 				B56B440F2307C1F9009681AF /* SimpleCamera.swift in Sources */,
 				B54C19BD231A3F88007DAB33 /* StoriesTableCell.swift in Sources */,
