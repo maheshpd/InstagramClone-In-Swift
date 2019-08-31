@@ -18,7 +18,7 @@
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4a6-PI-G6m">
                         <rect key="frame" x="0.0" y="0.0" width="599" height="125"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="125" id="eq8-Cq-ncN"/>
                         </constraints>
@@ -34,6 +34,7 @@
                     <constraint firstItem="4a6-PI-G6m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="L8T-nR-6kJ"/>
                     <constraint firstAttribute="trailing" secondItem="4a6-PI-G6m" secondAttribute="trailing" id="gsG-08-Uyc"/>
                     <constraint firstItem="4a6-PI-G6m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xTe-dz-5Es"/>
+                    <constraint firstAttribute="bottom" secondItem="4a6-PI-G6m" secondAttribute="bottom" id="ydc-8k-alK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
