@@ -137,6 +137,15 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentCountButton" destination="Hrb-pM-6PE" id="E1z-Eo-9jB"/>
+                <outlet property="dateLbl" destination="Wqu-Bm-Hzl" id="2PV-9V-Gnh"/>
+                <outlet property="likesCountLbl" destination="xiH-yJ-VA4" id="5UO-g4-9J0"/>
+                <outlet property="postCommentLbl" destination="VnK-77-O3o" id="7p2-8r-0Y4"/>
+                <outlet property="postImage" destination="VO9-mG-ZnK" id="QBQ-gC-weJ"/>
+                <outlet property="profileImage" destination="HDr-Ob-5hJ" id="Lsb-CY-8Ge"/>
+                <outlet property="userProfileName" destination="wDf-fm-Tc2" id="bRG-Vu-DKq"/>
+            </connections>
             <point key="canvasLocation" x="131.15942028985509" y="127.56696428571428"/>
         </tableViewCell>
     </objects>
