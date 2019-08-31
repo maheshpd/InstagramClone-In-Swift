@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,13 +15,59 @@
                     <view key="view" contentMode="scaleToFill" id="gbU-96-LTc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rdk-qC-Q1j">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8ke-Xh-Kc9">
+                                    <size key="itemSize" width="187" height="181"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExploreCollectionViewCell" id="U8Z-Xk-opO" customClass="ExploreCollectionViewCell" customModule="InstagramClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="181"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xhW-Iw-9WD">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="181"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ih2-dy-8Xv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="181"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ih2-dy-8Xv" secondAttribute="trailing" id="G5l-b8-B3y"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ih2-dy-8Xv" secondAttribute="bottom" id="N7c-1s-o7u"/>
+                                                <constraint firstItem="Ih2-dy-8Xv" firstAttribute="top" secondItem="xhW-Iw-9WD" secondAttribute="top" id="ZQ1-Yo-kky"/>
+                                                <constraint firstItem="Ih2-dy-8Xv" firstAttribute="leading" secondItem="xhW-Iw-9WD" secondAttribute="leading" id="t1Y-is-ese"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="187" height="181"/>
+                                        <connections>
+                                            <outlet property="exploreImage" destination="Ih2-dy-8Xv" id="8d9-ME-mGy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rdk-qC-Q1j" firstAttribute="top" secondItem="QVC-rp-1Mg" secondAttribute="top" id="WVp-64-VJ9"/>
+                            <constraint firstItem="QVC-rp-1Mg" firstAttribute="trailing" secondItem="rdk-qC-Q1j" secondAttribute="trailing" id="cfg-KC-qvS"/>
+                            <constraint firstItem="QVC-rp-1Mg" firstAttribute="bottom" secondItem="rdk-qC-Q1j" secondAttribute="bottom" id="qiE-Mb-sCo"/>
+                            <constraint firstItem="rdk-qC-Q1j" firstAttribute="leading" secondItem="QVC-rp-1Mg" secondAttribute="leading" id="rsA-mi-oVy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QVC-rp-1Mg"/>
                     </view>
+                    <connections>
+                        <outlet property="searchCollectionView" destination="rdk-qC-Q1j" id="2pS-tu-1nl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oT-Fg-MVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="105"/>
+            <point key="canvasLocation" x="144.92753623188406" y="104.46428571428571"/>
         </scene>
     </scenes>
 </document>
