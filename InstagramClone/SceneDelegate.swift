@@ -12,7 +12,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let tabBarDelegate = TabBarDelegate()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
@@ -60,6 +60,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
               tabController.viewControllers = vcs
               tabController.tabBar.isTranslucent = false
               
+        tabController.delegate = tabBarDelegate
+        
               if let items = tabController.tabBar.items {
                   for item in items {
                       if let image = item.image {

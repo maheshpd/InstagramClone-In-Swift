@@ -39,6 +39,7 @@
 		B5D7933424415B5E005D2BC7 /* NewPostPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7933324415B5E005D2BC7 /* NewPostPageViewController.swift */; };
 		B5D7933624415BD2005D2BC7 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7933524415BD2005D2BC7 /* PhotoLibraryViewController.swift */; };
 		B5D7933824415C1F005D2BC7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7933724415C1F005D2BC7 /* CameraViewController.swift */; };
+		B5D7933A244162B5005D2BC7 /* TabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D79339244162B5005D2BC7 /* TabBarDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		B5D7933324415B5E005D2BC7 /* NewPostPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostPageViewController.swift; sourceTree = "<group>"; };
 		B5D7933524415BD2005D2BC7 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
 		B5D7933724415C1F005D2BC7 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B5D79339244162B5005D2BC7 /* TabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				B56B43E323073A98009681AF /* Assets.xcassets */,
 				B56B43E523073A98009681AF /* LaunchScreen.storyboard */,
 				B56B43E823073A98009681AF /* Info.plist */,
+				B5D79339244162B5005D2BC7 /* TabBarDelegate.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				B56B43DB23073A95009681AF /* AppDelegate.swift in Sources */,
 				B5D7932E243FE99D005D2BC7 /* UserData.swift in Sources */,
 				B56B43DD23073A95009681AF /* SceneDelegate.swift in Sources */,
+				B5D7933A244162B5005D2BC7 /* TabBarDelegate.swift in Sources */,
 				B5D7933624415BD2005D2BC7 /* PhotoLibraryViewController.swift in Sources */,
 				B54C19C1231A4A91007DAB33 /* StoryCollectionViewCell.swift in Sources */,
 				B54C19C5231A6196007DAB33 /* FeedTableViewCell.swift in Sources */,
