@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,65 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let tabController = UITabBarController()
-        
-        let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        
-        let searchStoryboard = UIStoryboard(name: "Search", bundle: nil)
-        
-        let newPostStoryboard = UIStoryboard(name: "NewPost", bundle: nil)
-        
-        let ProfileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
-        
-        let ActivityStoryboard = UIStoryboard(name: "Activity", bundle: nil)
-        
-        let homeVc = homeStoryboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
-        
-        let searchVc = searchStoryboard.instantiateViewController(withIdentifier: "Search") as! SearchViewController
-        
-        let newPostVc = newPostStoryboard.instantiateViewController(withIdentifier: "NewPost") as! NewPostViewController
-        
-        let profileVc = ProfileStoryboard.instantiateViewController(withIdentifier: "Profile") as! ProfileViewController
-        
-        let activityVc = ActivityStoryboard.instantiateViewController(withIdentifier: "Activity") as! ActivityViewController
-        
-        let vcData: [(UIViewController,UIImage,UIImage)] = [
-                (homeVc, UIImage(named: "Home")!,UIImage(named: "HomeSelected")!),
-                (searchVc, UIImage(named: "Search")!,UIImage(named: "SearchSelected")!),
-                (newPostVc, UIImage(named: "Post")!,UIImage(named: "Post")!),
-                (activityVc, UIImage(named: "Activity")!,UIImage(named: "ActivitySelected")!),
-                (profileVc, UIImage(named: "Profile")!,UIImage(named: "ProfileSelected")!),
-               
-        ]
-        
-        let vcs = vcData.map { (vc,defaultImage,selectedImage) -> UINavigationController in
-            
-            let nav = UINavigationController(rootViewController: vc)
-            nav.tabBarItem.image = defaultImage
-            nav.tabBarItem.selectedImage = selectedImage
-            return nav
-        }
-        
-        tabController.viewControllers = vcs
-        tabController.tabBar.isTranslucent = false
-        
-        if let items = tabController.tabBar.items {
-            for item in items {
-                if let image = item.image {
-                    item.image = image.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-                }
-                
-                if let selectedImage = item.selectedImage {
-                    item.selectedImage = selectedImage.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-                }
-                
-                item.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-                
-            }
-        }
+      
         
         UINavigationBar.appearance().backgroundColor = UIColor.white
-        window?.rootViewController = tabController
+//        window?.rootViewController = tabController
         
          return true
     }

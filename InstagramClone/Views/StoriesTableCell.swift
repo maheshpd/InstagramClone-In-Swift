@@ -12,10 +12,10 @@ class StoriesTableCell: UITableViewCell ,UICollectionViewDelegate,UICollectionVi
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-//    lazy var  stories:[Story] = {
-//        let model = Model()
-//        return model.storylist
-//    }()
+    lazy var  stories: [Story] = {
+        let model = Model()
+        return model.storyList
+    }()
     
     
     
@@ -44,6 +44,6 @@ class StoriesTableCell: UITableViewCell ,UICollectionViewDelegate,UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 90, height: 90)
+        return CGSize(width: 90, height: 110)
     }
 }

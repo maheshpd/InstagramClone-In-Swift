@@ -170,8 +170,8 @@ class SimpleCamera: NSObject, SimpleCameraProtocol {
                 
                 preferredDeviceType = .builtInWideAngleCamera
                 
-            @unknown default:
-                <#fatalError()#>
+            @unknown default: 
+                fatalError()
             }
             
             self.changeCameraPosition(activeInput: activeInput, preferredPosition: preferredPosition, preferredDeviceType: preferredDeviceType)
@@ -699,6 +699,7 @@ class SimpleCamera: NSObject, SimpleCameraProtocol {
         case .restricted:
             // The user doesn't have the authority to request access e.g. parental restriction.
             completionHandler(false)
+       
         }
     }
     

@@ -12,6 +12,14 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var searchCollectionView: UICollectionView!
     
     var searchController: UISearchController!
+    
+    lazy var posts: [Post] = {
+        
+       let model = Model()
+        return model.postList
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +27,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         searchCollectionView.delegate = self
         searchCollectionView.dataSource = self
-        searchCollection = UISearchController(searchResultsController: nil)
+        searchController = UISearchController(searchResultsController: nil)
         searchController.obscuresBackgroundDuringPresentation = true
         searchController.searchBar.showsCancelButton = false
         
@@ -35,20 +43,26 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
-        let searchBarController = SearchBarContainerView(customeSearchBar: searchController.searchBar)
-        searchBarController.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 44)
-        navigationItem.titleView = searchBarController
+        let searchBarContainer = SearchBarContainerView(customeSearchBar: searchController.searchBar)
+        searchBarContainer.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 44)
+        navigationItem.titleView = searchBarContainer
+        
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return posts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreCollectionViewCell", for: indexPath) as! ExploreCollectionViewCell
+        
+        cell.exploreImage.image = posts[indexPath.row].postImage
         
         return cell
     }
+    
+    
+    
     
 }

@@ -33,6 +33,12 @@
 		B56B440E2307C1F9009681AF /* SimpleCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B440B2307C1F9009681AF /* SimpleCameraView.swift */; };
 		B56B440F2307C1F9009681AF /* SimpleCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B440C2307C1F9009681AF /* SimpleCamera.swift */; };
 		B56B44102307C1F9009681AF /* SimpleCameraProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B440D2307C1F9009681AF /* SimpleCameraProtocol.swift */; };
+		B5D7932C243FE99D005D2BC7 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D79329243FE99D005D2BC7 /* ActivityData.swift */; };
+		B5D7932D243FE99D005D2BC7 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7932A243FE99D005D2BC7 /* FeedData.swift */; };
+		B5D7932E243FE99D005D2BC7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7932B243FE99D005D2BC7 /* UserData.swift */; };
+		B5D7933424415B5E005D2BC7 /* NewPostPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7933324415B5E005D2BC7 /* NewPostPageViewController.swift */; };
+		B5D7933624415BD2005D2BC7 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7933524415BD2005D2BC7 /* PhotoLibraryViewController.swift */; };
+		B5D7933824415C1F005D2BC7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7933724415C1F005D2BC7 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +70,12 @@
 		B56B440B2307C1F9009681AF /* SimpleCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraView.swift; sourceTree = "<group>"; };
 		B56B440C2307C1F9009681AF /* SimpleCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCamera.swift; sourceTree = "<group>"; };
 		B56B440D2307C1F9009681AF /* SimpleCameraProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraProtocol.swift; sourceTree = "<group>"; };
+		B5D79329243FE99D005D2BC7 /* ActivityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
+		B5D7932A243FE99D005D2BC7 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		B5D7932B243FE99D005D2BC7 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		B5D7933324415B5E005D2BC7 /* NewPostPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostPageViewController.swift; sourceTree = "<group>"; };
+		B5D7933524415BD2005D2BC7 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		B5D7933724415C1F005D2BC7 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,8 @@
 		B56B43D923073A95009681AF /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				B54C19CB231AA81B007DAB33 /* CollectionLayout.swift */,
+				B5D79328243FE958005D2BC7 /* Deta */,
 				B54C19BA231A3EDA007DAB33 /* Views */,
 				B56B44082307C194009681AF /* Library */,
 				B56B43DA23073A95009681AF /* AppDelegate.swift */,
@@ -120,7 +134,6 @@
 				B56B43E323073A98009681AF /* Assets.xcassets */,
 				B56B43E523073A98009681AF /* LaunchScreen.storyboard */,
 				B56B43E823073A98009681AF /* Info.plist */,
-				B54C19CB231AA81B007DAB33 /* CollectionLayout.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -145,6 +158,9 @@
 				B56B43FE23073B6A009681AF /* NewPostViewController.swift */,
 				B56B440023073B78009681AF /* ProfileViewController.swift */,
 				B56B440223073B86009681AF /* ActivityViewController.swift */,
+				B5D7933324415B5E005D2BC7 /* NewPostPageViewController.swift */,
+				B5D7933524415BD2005D2BC7 /* PhotoLibraryViewController.swift */,
+				B5D7933724415C1F005D2BC7 /* CameraViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -165,6 +181,16 @@
 				B56B440B2307C1F9009681AF /* SimpleCameraView.swift */,
 			);
 			path = SimpleCamera;
+			sourceTree = "<group>";
+		};
+		B5D79328243FE958005D2BC7 /* Deta */ = {
+			isa = PBXGroup;
+			children = (
+				B5D79329243FE99D005D2BC7 /* ActivityData.swift */,
+				B5D7932A243FE99D005D2BC7 /* FeedData.swift */,
+				B5D7932B243FE99D005D2BC7 /* UserData.swift */,
+			);
+			path = Deta;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +220,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Mahesh Prasad";
 				TargetAttributes = {
 					B56B43D623073A95009681AF = {
@@ -248,17 +274,23 @@
 				B56B44102307C1F9009681AF /* SimpleCameraProtocol.swift in Sources */,
 				B56B440123073B78009681AF /* ProfileViewController.swift in Sources */,
 				B56B43DB23073A95009681AF /* AppDelegate.swift in Sources */,
+				B5D7932E243FE99D005D2BC7 /* UserData.swift in Sources */,
 				B56B43DD23073A95009681AF /* SceneDelegate.swift in Sources */,
+				B5D7933624415BD2005D2BC7 /* PhotoLibraryViewController.swift in Sources */,
 				B54C19C1231A4A91007DAB33 /* StoryCollectionViewCell.swift in Sources */,
 				B54C19C5231A6196007DAB33 /* FeedTableViewCell.swift in Sources */,
 				B56B43FD23073B5B009681AF /* SearchViewController.swift in Sources */,
 				B56B440F2307C1F9009681AF /* SimpleCamera.swift in Sources */,
 				B54C19C8231A8FA1007DAB33 /* ExploreCollectionViewCell.swift in Sources */,
+				B5D7933824415C1F005D2BC7 /* CameraViewController.swift in Sources */,
+				B5D7933424415B5E005D2BC7 /* NewPostPageViewController.swift in Sources */,
 				B54C19CA231A9366007DAB33 /* SearchBarContainerView.swift in Sources */,
 				B54C19BD231A3F88007DAB33 /* StoriesTableCell.swift in Sources */,
+				B5D7932C243FE99D005D2BC7 /* ActivityData.swift in Sources */,
 				B54C19CC231AA81B007DAB33 /* CollectionLayout.swift in Sources */,
 				B56B440323073B86009681AF /* ActivityViewController.swift in Sources */,
 				B56B43FB23073B49009681AF /* HomeViewController.swift in Sources */,
+				B5D7932D243FE99D005D2BC7 /* FeedData.swift in Sources */,
 				B56B43FF23073B6A009681AF /* NewPostViewController.swift in Sources */,
 				B56B440E2307C1F9009681AF /* SimpleCameraView.swift in Sources */,
 			);
@@ -399,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84W8QG5399;
 				INFOPLIST_FILE = InstagramClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84W8QG5399;
 				INFOPLIST_FILE = InstagramClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

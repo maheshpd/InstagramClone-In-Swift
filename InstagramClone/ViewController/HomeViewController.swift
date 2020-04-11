@@ -12,10 +12,10 @@ class HomeViewController: UIViewController , UITableViewDelegate ,UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
-//    lazy var posts: [Post] = {
-//        let model = Model()
-//        return model.postlist
-//    }()
+    lazy var posts: [Post] = {
+        let model = Model()
+        return model.postList
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,12 +50,15 @@ class HomeViewController: UIViewController , UITableViewDelegate ,UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "StoriesTableViewCell", for: indexPath.row) as StoriesTableCell
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StoriesTableCell") as! StoriesTableCell
+            
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "StoriesTableViewCell" for) as! StoriesTableCell
             
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell") as! FeedTableViewCell
         
         let currentIndex = indexPath.row - 1
         
@@ -63,8 +66,8 @@ class HomeViewController: UIViewController , UITableViewDelegate ,UITableViewDat
         cell.profileImage.image = postData.user.profileImage
         cell.postImage.image = postData.postImage
         cell.dateLbl.text = postData.datePosted
-        cell.likesCountLbl.text = "\(postData.likeCount) likes"
-        cell.postCommentLbl.text = postData.postCount
+        cell.likesCountLbl.text = "\(postData.likesCount) likes"
+        cell.postCommentLbl.text = postData.postComment
         cell.userProfileName.setTitle(postData.user.name, for: .normal)
         cell.commentCountButton.setTitle("View all \(postData.commentCount) comments", for: .normal)
         return cell
